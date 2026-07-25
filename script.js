@@ -1,6 +1,7 @@
 
 
 
+
 const button = document.querySelectorAll(".filter-buttons button");
 
 
@@ -45,4 +46,11 @@ closeBtn.addEventListener("click", () => {
     popup.style.display = "none";
     popupVideo.pause();
     popupVideo.currentTime = 0;
+});
+const submit = document.getElementById("send-msg");
+
+submit.addEventListener("click", (e) => {
+    e.preventDefault(); 
+
+    alert("Email is sent!");
 });
